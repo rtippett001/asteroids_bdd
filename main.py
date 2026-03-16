@@ -13,12 +13,13 @@ def main():
     print(f"Screen width: {SCREEN_WIDTH}")
     print(f"Screen height: {SCREEN_HEIGHT}")
 
-    log_state()
 
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
+
+        log_state()
 
         screen.fill("black")
 
